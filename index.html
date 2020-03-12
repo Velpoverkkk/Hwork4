@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tom & Jerry</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <h1> Jerry and Cheese </h1>
+    </header>
+
+    <h3>Игра на одного или на 2?</h3>
+    <section>
+        <button id="btn" onclick="btn()">only one</button>
+    </section>
+    <section >
+        <button id="btn2" onclick="btn2()"> two</button>
+    </section>
+
+    
+
+    <div id="box" class="box">
+        <h3>Выберите сложность</h3>
+    <audio id="song" src='./sound/tom&jer.mp3'></audio>
+    <section id="displayBtn">
+        <button id="play-game-easy"> Play Game Easy</button>
+    </section>
+    <section id="displayBtn">
+        <button id="play-game-normal"> Play Game Normal</button>
+    </section>
+    <section id="displayBtn">
+        <button id="play-game-hard"> Play Game Hard</button>
+    </section>
+    </div>
+      
+
+    <section id="game-place">
+        <canvas id="canvas1" height="600px" width="800px"></canvas>
+    </section>
+
+    <script src="./js/tom.js"></script>
+    <script src="./js/jerry.js"></script>
+    <script src="./js/cheese.js"></script>
+    <script src="./js/mechanism.js"></script>
+    <script src="./js/toffi.js"></script>
+</body>
+</html>
