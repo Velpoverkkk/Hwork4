@@ -100,7 +100,24 @@ Tom.prototype.stop = function(){
 
 };
 
+Tom.prototype.moveAgain = function(){
+    this.tomArray.forEach(function(tomspeed){
+        if(lvl=1){
+            tomspeed.vx = 3;
+            tomspeed.vy = 3;
+            }
+            if(lvl=2){
+                tomspeed.vx = 6;
+                tomspeed.vy = 6;
+            }
+            if(lvl=3){
+                tomspeed.vx = 9;
+                tomspeed.vy = 9;
+            }
+    })
+    
 
+};
 
 
 
