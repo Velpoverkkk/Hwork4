@@ -139,6 +139,7 @@ var W_KEY = 87;
 var S_KEY = 83;
 var A_KEY = 65;
 var D_KEY = 68;
+var count = 0;
 
 
 document.onkeydown = function(event){
@@ -209,7 +210,13 @@ document.onkeyup = function(event){
             jerry.stop();
             tom.stop();
             toffi.stop();
-            ProductCheese.stop();
+            if(count%2 == 0){
+                lvl = localStorage.getItem('lvl');
+                jerry.moveAgain();
+                toffi.moveAgain();
+                tom.moveAgain();
+            }
+            count++;
         break;
     }
 };
