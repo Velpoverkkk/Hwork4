@@ -16,6 +16,21 @@ Jerry.prototype.stop = function(){
     this.speedX = 0;
     this.speedY = 0;
 }
+Jerry.prototype.moveAgain = function(){
+    if(lvl=1){
+    this.speedX = 10;
+    this.speedY = 10;
+    }
+    if(lvl=2){
+        this.speedX = 15;
+        this.speedY = 15;
+    }
+    if(lvl=3){
+        this.speedX = 20;
+        this.speedY = 20;
+    }
+    
+}
 Jerry.prototype.move = function(edit){
     if(edit === "top"){
         this.y -= this.speedY; 
